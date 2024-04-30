@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "types": ["jest", "@types/node"],
     "plugins": [
       {
         "name": "next"
@@ -23,7 +24,9 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/FileUpload.jsx"
+    "src/components/FileUpload.jsx",
+    "src/lib/tests/context.test.js",
+    "src/app/chat/[chatId]/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

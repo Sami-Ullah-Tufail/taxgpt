@@ -12,7 +12,7 @@ import { convertToAscii } from "./utils";
 
 export const getPineconeClient = () =>
   new Pinecone({
-    apiKey: "cec55c70-2755-4064-9bdc-4544eb9feb2a",
+    apiKey: process.env.NEXT_PUBLIC_PINECONE_API_KEY!,
   });
 
 type PDFPage = {

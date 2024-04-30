@@ -8,7 +8,7 @@ export async function getMatchesFromEmbeddings(
 ) {
   try {
     const client = new Pinecone({
-      apiKey: "cec55c70-2755-4064-9bdc-4544eb9feb2a",
+      apiKey: process.env.NEXT_PUBLIC_PINECONE_API_KEY!,
     });
     const pineconeIndex = await client.index("1122");
     const namespace = pineconeIndex.namespace(convertToAscii(fileKey));
