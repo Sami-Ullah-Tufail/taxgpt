@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## TaxGPT Demo
 
-## Getting Started
+A cutting-edge tax assistance application built with the power of:
 
-First, run the development server:
+- **OpenAI API:** Leverages advanced large language models (LLMs) for tax-related question answering and guidance.
+- **Next.js:** Provides a robust and performant React framework.
+- **RAG (Retrieval-Augmented Generation):** Enables the app to reference relevant tax documentation and regulations for more informed responses.
+- **Pinecone:** Offers a scalable vector database for efficient storage and retrieval of tax information.
+- **Drizzle ORM:** Streamlines interaction with your database, simplifying data management.
+- **Clerk/Next:** Secures user authentication and authorization seamlessly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Intuitive Tax Q&A:** Users can ask complex tax questions and receive comprehensive, AI-powered answers.
+- **Documentation Reference:** Provides supporting documentation and code citations for increased explainability.
+- **Secure User Experience:** Protects user data and offers controlled access.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js and npm (or yarn)
+- Accounts for:
+  - OpenAI ([https://openai.com/](https://openai.com/))
+  - Pinecone ([https://www.pinecone.io/](https://www.pinecone.io/))
+  - Clerk ([https://clerk.dev/](https://clerk.dev/))
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone this repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/your-username/taxgpt-demo.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
 
-## Deploy on Vercel
+   ```bash
+   cd taxgpt-demo
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Configuration
+
+1. Create a `.env.local` file in the root of your project.
+2. Add the following environment variables, replacing placeholders with your actual credentials:
+
+   ```
+   NEXT_PUBLIC_CLERK_FRONTEND_API=...
+   OPENAI_API_KEY=...
+   PINECONE_API_KEY=...
+   PINECONE_ENVIRONMENT=...
+   ```
+
+### Running the Application
+
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. Open http://localhost:3000 in your web browser.
+
+### Notes
+
+- This project assumes you have a pre-populated Pinecone index containing relevant tax information.
+- Consider adding comprehensive testing for enhanced robustness.
+
+### Contributing
+
+We welcome contributions! Feel free to open pull requests or issues for improvements or bug fixes.
+
+### License
+
+This project is licensed under the MIT License – see the LICENSE file for details.

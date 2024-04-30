@@ -23,7 +23,7 @@ export default async function Home() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center">
-            <h1 className="mr-3 text-5xl font-semibold">Hamara kaam </h1>
+            <h1 className="mr-3 text-5xl font-semibold">TaxGPT</h1>
             <UserButton afterSignOutUrl="/" />
           </div>
 
@@ -41,7 +41,7 @@ export default async function Home() {
           </div>
 
           <p className="max-w-xl mt-1 text-lg text-slate-600">
-            Prepqared By Metallrgy and Materials Dept
+            A cutting-edge tax assistance application built with the power of AI
           </p>
 
           <div className="w-full mt-4">
